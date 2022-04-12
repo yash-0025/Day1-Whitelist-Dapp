@@ -114,7 +114,7 @@ export default function Home() {
       // We will fetch the address which is connected to the metamask
       const address = await signer.getAddress()
       // call the whitelistedAddress from the contract
-      const _joinedWhitelist = await whitelistContract.whitelistedAddresses(
+      const _joinedWhitelist = await whitelistContract.whitelistedAddress(
         address
       )
       setJoinedWhitelist(_joinedWhitelist)
